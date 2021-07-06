@@ -21,6 +21,7 @@ Contributions that help to improve the code are welcome. In case you want to con
 
 # Team8 setup guide:
 
+```
 * Simulation
 ** ~roslaunch smb_gazebo sim.launch~
 
@@ -47,3 +48,4 @@ Contributions that help to improve the code are welcome. In case you want to con
 ** Place anywhere
 ** Run ~roslaunch smb_navigation_scripts follow_waypoints.launch input_filename:=$(pwd)/paths/waypoints_out.csv goal_frame_id:=challenge_frame~
 ** In another terminal, run ~rostopic pub /start_journey std_msgs/Empty -1~
+```
