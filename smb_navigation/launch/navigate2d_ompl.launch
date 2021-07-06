@@ -13,7 +13,7 @@
   <arg name="odom_topic"         default="/base_odom"/>
   
   <!-- TODO Set right map -->
-  <arg name="global_map"         default="$(find smb_navigation)/data/simulation/map.yaml"/>
+  <arg name="global_map"         default="$(find smb_navigation)/data/mission/map.yaml"/>
   
   <!-- Parameters for follow-waypoint -->
   <arg name="output_folder"      default="$(find smb_navigation_scripts)/saved_path"/>
