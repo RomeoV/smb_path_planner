@@ -49,3 +49,11 @@ Contributions that help to improve the code are welcome. In case you want to con
 ** Run ~roslaunch smb_navigation_scripts follow_waypoints.launch input_filename:=$(pwd)/paths/waypoints_out.csv goal_frame_id:=challenge_frame~
 ** In another terminal, run ~rostopic pub /start_journey std_msgs/Empty -1~
 ```
+
+# How To Run Navigation (Robot)
+
+1- **roslaunch smb smb.launch command_smb:=false** (launch sensors)
+
+2- **roslaunch smb_slam localization.launch launch_rviz:=true map_name:=<path_to_map>** (launch localization on the map)
+
+3- **roslaunch smb_navigation navigate2d_ompl.launch global_frame:=tracking_camera_odom** (launch planner)
