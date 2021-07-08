@@ -52,9 +52,14 @@ Contributions that help to improve the code are welcome. In case you want to con
 
 # Run navigation stack on the robot
 
-1- roslaunch smb smb.launch (on robot)
-2- roslaunch smb_slam localization.launch map_name:=team7_mapdecimated.pcd (on robot)
-3- roslaunch smb_navigation navigate2d_ompl.launch global_frame:=map use_global_map:=true (on robot)
-4- roslaunch icp_localization icp_vis.launch (on host machine)
-5- set 2D pose on the opened RVIZ on host machine
-6- roslaunch smb_mission_planner mission_planner.launch config_file_path:=/home/helecomika/catkin_ws/src/smb_mission_planner/configs/mission_inside.yaml (on robot)
+1-roslaunch smb smb.launch (on robot)
+
+2-roslaunch smb_slam localization.launch map_name:=team7_mapdecimated.pcd (on robot)
+
+3-roslaunch smb_navigation navigate2d_ompl.launch global_frame:=map use_global_map:=true (on robot)
+
+4-roslaunch icp_localization icp_vis.launch (on host machine)
+
+5-set 2D pose on the opened RVIZ on host machine
+
+6-roslaunch smb_mission_planner mission_planner.launch config_file_path:=/home/helecomika/catkin_ws/src/smb_mission_planner/configs/mission_inside.yaml (on robot)
