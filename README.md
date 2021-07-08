@@ -64,4 +64,4 @@ Contributions that help to improve the code are welcome. In case you want to con
 
 6-roslaunch smb_mission_planner mission_planner.launch config_file_path:=/home/helecomika/catkin_ws/src/smb_mission_planner/configs/mission_inside.yaml (on robot)
 
-7-rosbag record -O cartographer_bag /camera/odom/sample /rslidar_points /tf_static /versavis/imu (on host machine)
+7-rosbag record -O cartographer.bag /camera/odom/sample /rslidar_points /tf_static /versavis/imu (on host machine)
